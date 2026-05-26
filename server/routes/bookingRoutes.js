@@ -1,7 +1,4 @@
-// const Stripe = require("stripe");
-// const stripe = Stripe(
-//     "sk_test_51Q1WBGDc5J7nS49CPbObkenbONHRmg9uAB5iiJsXtSuepXUPw50CvCV500q7NpLYJcuP6H6m0NEBrmOwaFBmMt3k00lIZasvkD"
-// );
+
 
 const bookingModel = require("../models/bookingModel");
 const showModel = require("../models/showModel");
