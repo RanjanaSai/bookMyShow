@@ -2,10 +2,12 @@ const bookingModel = require("../models/bookingModel");
 const showModel = require("../models/showModel");
 const userModel = require("../models/userModel")
 const Stripe = require("stripe");
-const stripe = Stripe(
-  //"sk_test_51TXj0w0jStIoGRp385Hbw2C0P87OmWoeHtebx0sugBJObz6ZsZSZINEMKyOG6GgRecREN10NjUk3oBoAjN5PWMBs00aPMeVy8n"
-  "sk_test_51Q1WBGDc5J7nS49CPbObkenbONHRmg9uAB5iiJsXtSuepXUPw50CvCV500q7NpLYJcuP6H6m0NEBrmOwaFBmMt3k00lIZasvkD"
-);
+require('dotenv').config();// load the environment variables
+const stripe = Stripe(process.env.DB_URL);
+// const stripe = Stripe(
+//   //"sk_test_51TXj0w0jStIoGRp385Hbw2C0P87OmWoeHtebx0sugBJObz6ZsZSZINEMKyOG6GgRecREN10NjUk3oBoAjN5PWMBs00aPMeVy8n"
+//   "sk_test_51Q1WBGDc5J7nS49CPbObkenbONHRmg9uAB5iiJsXtSuepXUPw50CvCV500q7NpLYJcuP6H6m0NEBrmOwaFBmMt3k00lIZasvkD"
+// );
 
 
 const sendEmailHelper = require("../utils/sendEmailHelper");
