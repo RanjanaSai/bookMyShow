@@ -1,8 +1,8 @@
 import { axiosInstance } from "./index";
 
-const BASE_URL = "http://localhost:8080/api/theatre";
+//const BASE_URL = "http://localhost:8080/api/theatre";
 
-//const BASE_URL = "/api/theatre";
+const BASE_URL = "/api/theatre";
 export const getTheatreByOwner = async (ownerId) => {
     try {
         const resp = await axiosInstance.post(`${BASE_URL}/get-all-theatre-by-owner`, { owner: ownerId });

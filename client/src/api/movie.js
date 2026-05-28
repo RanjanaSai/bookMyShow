@@ -1,8 +1,8 @@
 
 import { axiosInstance } from "./index";
 
-//const BASE_URL = "/api/movie";
-const BASE_URL = "http://localhost:8080/api/movie";
+const BASE_URL = "/api/movie";
+//const BASE_URL = "http://localhost:8080/api/movie";
 export const getAllMovies = async () => {
     try {
         const response = await axiosInstance.get(`${BASE_URL}/get-all`);
