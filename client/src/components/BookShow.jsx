@@ -66,6 +66,7 @@ const BookShow = () => {
                                     <li>
                                         <button
                                             className={seatClass}
+                                            //                                            
                                             onClick={() => {
                                                 if (selectedSeats.includes(seatNumber)) {
                                                     setSelectedSeats(
@@ -131,7 +132,7 @@ const BookShow = () => {
 
     useEffect(() => {
         getData();
-    }, []);
+    },);
     return (
         <>
             {show && (
