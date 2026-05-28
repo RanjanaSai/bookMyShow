@@ -174,9 +174,7 @@ const BookShow = () => {
                                     token={onToken}
                                     billingAddress
                                     amount={selectedSeats.length * show.ticketPrice * 100}
-                                    stripeKey=
-
-                                    "pk_test_51TXj0w0jStIoGRp3d87dcdllNQ1f6feOAQApLqVa7xbBQTSwzYRxawu3CC0W1Z6gGVpdRAA2beOmlfpy2MYJfwxh000Y2yL4Pd"
+                                    stripeKey="pk_test_51TXj0w0jStIoGRp3d87dcdllNQ1f6feOAQApLqVa7xbBQTSwzYRxawu3CC0W1Z6gGVpdRAA2beOmlfpy2MYJfwxh000Y2yL4Pd"
                                 >
 
                                     <div className="max-width-600 mx-auto">
