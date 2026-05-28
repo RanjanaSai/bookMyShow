@@ -68,30 +68,8 @@ A full-stack Movie Ticket Booking Application inspired by platform like BookMySh
 
 # Project Structure
 
-movie-ticket-booking/
-│
-├── client/                 # Frontend React Application
-│   ├── public/
-│   ├── src/
-│   │   ├── api/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── redux/
-│   │   ├── utils/
-│   │   └── App.jsx
-│   └── package.json
-│
-├── server/                 # Backend Node.js Application
-│   ├── config/
-│   ├── controllers/
-│   ├── middlewares/
-│   ├── models/
-│   ├── routes/
-│   ├── utils/
-│   └── app.js
-│
-├── README.md
-└── package.json
+<img width="227" height="275" alt="image" src="https://github.com/user-attachments/assets/a3cf8867-d555-4a71-9a13-5fe1583fac33" />
+
 
 
 ---
