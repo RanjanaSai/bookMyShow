@@ -132,7 +132,7 @@ const BookShow = () => {
 
     useEffect(() => {
         getData();
-    },);
+    }, []);
     return (
         <>
             {show && (
