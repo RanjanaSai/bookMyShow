@@ -3,7 +3,7 @@ const cors = require('cors');
 const rateLimit = require('express-rate-limit');
 const helmet = require('helmet');
 //const mongoSanitize = require('express-mongo-sanitize');
-
+const path = require('path');
 const connectDB = require('./config/db');
 const userRoute = require('./routes/userRoutes');
 const movieRoute = require('./routes/movieRoutes');
