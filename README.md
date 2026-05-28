@@ -119,22 +119,18 @@ npx nodemon sever.js
 
 # Frontend Setup
 
-```bash
+
 cd client
 npm install
 ```
 
-Create a `.env` file inside the `client` folder:
 
-```env
-REACT_APP_API_URL=http://localhost:8080
-```
 
 Run frontend server:
 
-```bash
+
 npm start
-```
+
 
 ---
 
@@ -142,7 +138,7 @@ npm start
 
 ## Frontend Build
 
-```bash
+
 npm run build
 ```
 
