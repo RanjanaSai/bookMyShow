@@ -50,6 +50,7 @@ const BookShow = () => {
                 </div>
                 <ul className="seat-ul justify-content-center">
                     {Array.from(Array(rows).keys()).map((row) => {
+                        // eslint-disable-next-line array-callback-return
                         return Array.from(Array(columns).keys()).map((column) => {
                             let seatNumber = row * columns + column + 1;
 
