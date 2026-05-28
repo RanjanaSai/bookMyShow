@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const rateLimit = require('express-rate-limit');
-const helmet = require('helmet');
+// const helmet = require('helmet');
 //const mongoSanitize = require('express-mongo-sanitize');
 const path = require('path');
 const connectDB = require('./config/db');
@@ -29,10 +29,10 @@ const PORT = 8080;
 
 //app.use(mongoSanitize());
 
-app.use(helmet({
-    contentSecurityPolicy: false
-})
-);
+// app.use(helmet({
+//     contentSecurityPolicy: false
+// })
+// );
 app.use(express.json());//parse incoming json request
 //app.use(cors());// allowing CORS requests
 

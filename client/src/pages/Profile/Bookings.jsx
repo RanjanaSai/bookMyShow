@@ -35,14 +35,14 @@ const Bookings = () => {
                                     <div className="d-flex flex-column-mob">
                                         <div className="flex-shrink-0">
                                             <img
-                                                //src={booking.show.movie.poster}
-                                                src={booking?.show?.movie?.poster || "/default-poster.jpg"}
+                                                src={booking.show.movie.poster}
+                                                // src={booking?.show?.movie?.poster || "/default-poster.jpg"}
                                                 width={100}
                                                 alt="Movie Poster"
                                             />
                                         </div>
                                         <div className="show-details flex-1">
-                                            <h3 className="mt-0 mb-0">{booking?.show?.movie?.title}</h3>
+                                            <h3 className="mt-0 mb-0">{booking.show.movie.title}</h3>
                                             <p>
                                                 Theatre: <b>{booking.show.theatre.name}</b>
                                             </p>

@@ -120,6 +120,7 @@ const getAllBookingsByUser = async (req, res) => {
           model: "theatres",
         },
       });
+
     res.send({
       success: true,
       message: "All Bookings by User have been fetched",
