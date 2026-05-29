@@ -247,9 +247,9 @@ npm start
 
 
 * Payment Page
-<img width="939" height="500" alt="image" src="https://github.com/user-attachments/assets/58fa295b-aad0-4ecb-9d0c-ada04b1e1676" />
+  <img width="939" height="500" alt="image" src="https://github.com/user-attachments/assets/58fa295b-aad0-4ecb-9d0c-ada04b1e1676" />
 
-  <img width="945" height="494" alt="image" src="https://github.com/user-attachments/assets/01a3a1b8-899d-4e4d-8fc4-26003fc5693a" />
+   <img width="945" height="494" alt="image" src="https://github.com/user-attachments/assets/01a3a1b8-899d-4e4d-8fc4-26003fc5693a" />
 
 
   
