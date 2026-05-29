@@ -232,9 +232,15 @@ npm start
 * Admin Dashboard and Movie Listings
   <img width="947" height="494" alt="image" src="https://github.com/user-attachments/assets/0e01dab4-c220-4da2-a120-467d84cfdc29" />
 
+* Admin Dashboard and Theatre Listing
+  <img width="956" height="443" alt="image" src="https://github.com/user-attachments/assets/b76cc2c0-12ce-431b-b4e6-f6726741d6df" />
+* Partner Page
+  <img width="958" height="442" alt="image" src="https://github.com/user-attachments/assets/e5db034b-267c-4358-99c0-45463105d564" />
+
 
 * Seat Selection
-   <img width="956" height="478" alt="image" src="https://github.com/user-attachments/assets/81983417-dbd5-411a-8d26-72ad8b413876" />
+  <img width="956" height="478" alt="image" src="https://github.com/user-attachments/assets/2015f64c-ed1f-4d97-84cd-147c590d5373" />
+
 
 
 * Payment Page
