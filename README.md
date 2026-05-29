@@ -257,13 +257,6 @@ npm start
   <img width="950" height="491" alt="image" src="https://github.com/user-attachments/assets/c7b4dd36-3fb0-4371-b45b-9745e248d209" />
 
 
-* Admin Dashboard
-  <img width="938" height="446" alt="image" src="https://github.com/user-attachments/assets/c1f6d721-65c0-49af-817e-4b5e456609a1" />
-
-* Theater Dashboard
-  <img width="956" height="386" alt="image" src="https://github.com/user-attachments/assets/712c9d3a-88f4-48c0-88c3-bbecad2a4f60" />
-
----
 
 # Future Enhancements
 
