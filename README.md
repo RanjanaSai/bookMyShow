@@ -237,17 +237,25 @@ npm start
 * Partner Page
   <img width="958" height="442" alt="image" src="https://github.com/user-attachments/assets/e5db034b-267c-4358-99c0-45463105d564" />
 
+* Booking Show
+  <img width="958" height="495" alt="image" src="https://github.com/user-attachments/assets/f5579d91-35fb-4445-8c40-3f5935a97e9f" />
 
+  
 * Seat Selection
   <img width="956" height="478" alt="image" src="https://github.com/user-attachments/assets/2015f64c-ed1f-4d97-84cd-147c590d5373" />
 
 
 
 * Payment Page
-  <img width="945" height="443" alt="image" src="https://github.com/user-attachments/assets/dd7c0dc4-79b4-4064-8f20-23206ea4c254" />
+<img width="939" height="500" alt="image" src="https://github.com/user-attachments/assets/58fa295b-aad0-4ecb-9d0c-ada04b1e1676" />
+
+  <img width="945" height="494" alt="image" src="https://github.com/user-attachments/assets/01a3a1b8-899d-4e4d-8fc4-26003fc5693a" />
+
+
   
 * Profile page
-  <img width="929" height="377" alt="image" src="https://github.com/user-attachments/assets/c51167f8-4270-4577-9488-6b57f16a701f" />
+  <img width="950" height="491" alt="image" src="https://github.com/user-attachments/assets/c7b4dd36-3fb0-4371-b45b-9745e248d209" />
+
 
 * Admin Dashboard
   <img width="938" height="446" alt="image" src="https://github.com/user-attachments/assets/c1f6d721-65c0-49af-817e-4b5e456609a1" />
