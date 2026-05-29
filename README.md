@@ -227,13 +227,15 @@ npm start
 
 
 * Home Page
-  <img width="947" height="365" alt="image" src="https://github.com/user-attachments/assets/7d417c12-f527-456d-8b40-4c221fefe7a0" />
+  <img width="944" height="440" alt="image" src="https://github.com/user-attachments/assets/fb8db684-814d-4318-9c19-ef1187fb61d5" />
 
-* Movie Listings
-  <img width="933" height="461" alt="image" src="https://github.com/user-attachments/assets/d623d253-3992-4888-a021-2491cc6f20c7" />
+* Admin Dashboard and Movie Listings
+  <img width="947" height="494" alt="image" src="https://github.com/user-attachments/assets/0e01dab4-c220-4da2-a120-467d84cfdc29" />
+
 
 * Seat Selection
-  <img width="929" height="423" alt="image" src="https://github.com/user-attachments/assets/ce48a46d-e2c2-4d8a-adc7-45c74cc72a79" />
+   <img width="956" height="478" alt="image" src="https://github.com/user-attachments/assets/81983417-dbd5-411a-8d26-72ad8b413876" />
+
 
 * Payment Page
   <img width="945" height="443" alt="image" src="https://github.com/user-attachments/assets/dd7c0dc4-79b4-4064-8f20-23206ea4c254" />
