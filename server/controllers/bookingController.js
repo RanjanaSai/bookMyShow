@@ -1,6 +1,7 @@
 const bookingModel = require("../models/bookingModel");
 const showModel = require("../models/showModel");
-const userModel = require("../models/userModel")
+const userModel = require("../models/userModel");
+const movieModel = rqquire("../models/userModel");
 const Stripe = require("stripe");
 require('dotenv').config();// load the environment variables
 const stripe = Stripe(process.env.STRIPE_KEY);
