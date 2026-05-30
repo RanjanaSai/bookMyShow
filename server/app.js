@@ -34,7 +34,7 @@ app.use(helmet({
 })
 );
 app.use(express.json());//parse incoming json request
-//app.use(cors());// allowing CORS requests
+app.use(cors());// allowing CORS requests
 
 const clientBuildPath = path.join(__dirname, "../client/build");
 console.log(clientBuildPath);
