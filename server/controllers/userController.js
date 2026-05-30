@@ -4,6 +4,7 @@ const UserModel = require('../models/userModel');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const sendEmailHelper = require('../utils/sendEmailHelper');
+const sendMail = require('../utils/sendMail');
 
 const createUser = async function (req, res) {
   try {
@@ -124,7 +125,8 @@ const forgotPassword = async (req, res) => {
     user.otp = otp;
     user.otpExpiry = Date.now() + 5 * 60 * 1000;
     await user.save();
-    await sendEmailHelper("otp.html", user.email, { name: user.name, otp: user.otp }, "OTP for BookMyShowClone");
+    //await sendEmailHelper("otp.html", user.email, { name: user.name, otp: user.otp }, "OTP for BookMyShowClone");
+    sendMail();
     res.send({
       success: true,
       message: "OTP sent to your email"
