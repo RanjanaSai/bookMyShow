@@ -124,12 +124,12 @@ const forgotPassword = async (req, res) => {
     user.otp = otp;
     user.otpExpiry = Date.now() + 5 * 60 * 1000;
     await user.save();
-    await sendEmailHelper("otp.html", user.email, { name: user.name, otp: user.otp }, "OTP for BookMyShowClone");
+    //await sendEmailHelper("otp.html", user.email, { name: user.name, otp: user.otp }, "OTP for BookMyShowClone");
     res.send({
       success: true,
       message: "OTP sent to your email"
     })
-    //await sendEmailHelper("otp.html", user.email, { name: user.name, otp: user.otp }, "OTP for BookMyShowClone");
+    await sendEmailHelper("otp.html", user.email, { name: user.name, otp: user.otp }, "OTP for BookMyShowClone");
   } catch (err) {
     res.send({
       success: false,
