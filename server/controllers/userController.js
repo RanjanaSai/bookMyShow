@@ -3,7 +3,7 @@ require('dotenv').config();
 const UserModel = require('../models/userModel');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
-const emailHelper = require('../utils/emailHelper');
+const sendEmailHelper = require('../utils/sendEmailHelper');
 //const sendMail = require('../utils/sendMail');
 
 const createUser = async function (req, res) {
