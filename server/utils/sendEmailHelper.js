@@ -12,7 +12,6 @@ const transporter = nodemailer.createTransport({
     auth: {
         user: process.env.GMAIL_USER,
         pass: process.env.GMAIL_PASS,
-
     },
 });
 
@@ -28,19 +27,19 @@ const replaceContent = (content, creds) => {
 async function sendEmailHelper(templateName, recieverEmail, creds, emailSubject) {
     try {
         const templatePath = path.join(__dirname, "email_templates", templateName);
-
         const content = await fs.promises.readFile(templatePath, "utf-8");
         const emailDetails = {
             to: recieverEmail,
             from: "bookmyshow-clone@gmail.com",
             subject: emailSubject,
-            text: `Hi ${creds.name} this is your OTP for BookMyShowCloneApp ${creds.otp}`,
+            text: `Hi ${creds.name} this is your OTP for BookMyShowClone ${creds.otp}`,
             html: replaceContent(content, creds)
         }
-
+        await transporter.sendMail(emailDetails);
     } catch (err) {
         console.log(err);
     }
 }
 
 module.exports = sendEmailHelper;
+

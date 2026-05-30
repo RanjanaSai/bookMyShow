@@ -34,14 +34,14 @@ app.use(helmet({
 })
 );
 app.use(express.json());//parse incoming json request
-//app.use(cors());// allowing CORS requests
-app.use(
-    cors({
-        origin: "*",
-        methods: ["*"],
-        allowedHeaders: ["Content-Type", "Authorization"],
-    })
-);
+app.use(cors());// allowing CORS requests
+// app.use(
+//     cors({
+//         origin: "*",
+//         methods: ["*"],
+//         allowedHeaders: ["Content-Type", "Authorization"],
+//     })
+// );
 
 
 const clientBuildPath = path.join(__dirname, "../client/build");
