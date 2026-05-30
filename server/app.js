@@ -61,7 +61,7 @@ app.use('/api/show', showRoute);
 app.use('/api/booking', bookRoute);
 
 
-app.use((req, res) => {
+app.get((req, res) => {
     res.sendFile(path.join(clientBuildPath, "index.html"));
 })
 
