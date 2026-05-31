@@ -1,4 +1,4 @@
-import axiosInstance from "./index";
+import { axiosInstance } from "./index";
 const BASE_URL = "/api/user";
 //const BASE_URL = 'http://localhost:8080/api/user';
 

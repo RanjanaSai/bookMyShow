@@ -25,7 +25,7 @@ const replaceContent = (content, creds) => {
 }
 
 // async..await is not allowed in global scope, must use a wrapper
-async function sendEmailHelper(templateName, recieverEmail, creds, emailSubject) {
+async function emailHelper(templateName, recieverEmail, creds, emailSubject) {
     try {
         const templatePath = path.join(__dirname, "email_templates", templateName);
         const content = await fs.promises.readFile(templatePath, "utf-8");
@@ -42,5 +42,5 @@ async function sendEmailHelper(templateName, recieverEmail, creds, emailSubject)
     }
 }
 
-module.exports = sendEmailHelper;
+module.exports = emailHelper;
 
