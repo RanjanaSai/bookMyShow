@@ -7,7 +7,7 @@ require('dotenv').config();// load the environment variables
 const stripe = Stripe(process.env.STRIPE_KEY);
 
 
-const sendEmailHelper = require("../utils/sendEmailHelper");
+const EmailHelper = require("../utils/emailHelper");
 
 const makePayment = async (req, res) => {
   try {
@@ -81,7 +81,7 @@ const bookNewShow = async (req, res) => {
       data: populatedBooking,
     });
 
-    await sendEmailHelper("ticketTemplate.html", populatedBooking.user.email, {
+    await EmailHelper("ticketTemplate.html", populatedBooking.user.email, {
       name: populatedBooking.user.name,
       movie: populatedBooking.show.movie.movieName,
       theatre: populatedBooking.show.theatre.name,
