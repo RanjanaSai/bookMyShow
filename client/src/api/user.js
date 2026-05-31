@@ -32,7 +32,7 @@ export const GetCurrentUser = async () => {
 }
 export const ForgotPassword = async (values) => {
     try {
-        const response = await axiosInstance.patch(
+        const response = await axiosInstance.post(
             `${BASE_URL}/forgot-password`,
             values
         );
