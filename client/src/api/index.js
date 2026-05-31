@@ -14,7 +14,7 @@ const axiosInstance = axios.create({
     headers: {
         "Content-Type": "application/json",
     },
-    baseURL: "/",
+    //baseURL: "/",
 });
 
 // request interceptor
