@@ -5,6 +5,7 @@ const BASE_URL = "/api/user";
 export const RegisterUser = async (values) => {
     try {
         const response = await axiosInstance.post(`${BASE_URL}/register`, values);
+
         return response.data;
     }
     catch (err) {
@@ -32,7 +33,7 @@ export const GetCurrentUser = async () => {
 }
 export const ForgotPassword = async (values) => {
     try {
-        const response = await axiosInstance.post(
+        const response = await axiosInstance.patch(
             `${BASE_URL}/forgot-password`,
             values
         );
