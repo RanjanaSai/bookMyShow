@@ -16,7 +16,7 @@ const isProduction = window.location.hostname !== 'localhost';
 export const axiosInstance = axios.create({
     // Explicitly points to your production URL on Render or defaults to your local setup
     baseURL: isProduction
-        ? "https://onrender.com"
+        ? "https://bookmyshow1-342l.onrender.com"
         : "http://localhost:8080",
     headers: {
         'Content-Type': 'application/json'
