@@ -37,7 +37,8 @@ async function EmailHelper(templateName, recieverEmail, creds, emailSubject) {
             text: `Hi ${creds.name} this is your OTP for BookMyShowClone ${creds.otp}`,
             html: replaceContent(content, creds)
         }
-        await transporter.sendMail(emailDetails);
+        const info = await transporter.sendMail(emailDetails);
+        console.log("MAIL SENT:", info);
     } catch (err) {
         console.log(err);
     }
