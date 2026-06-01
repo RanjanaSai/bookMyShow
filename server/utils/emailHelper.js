@@ -5,8 +5,8 @@ const path = require('path');
 const dotenv = require('dotenv');
 
 dotenv.config();
-console.log("GMAIL_USER =", process.env.GMAIL_USER);
-console.log("GMAIL_PASS exists =", !!process.env.GMAIL_PASS);
+// console.log("GMAIL_USER =", process.env.GMAIL_USER);
+// console.log("GMAIL_PASS exists =", !!process.env.GMAIL_PASS);
 const transporter = nodemailer.createTransport({
     host: "smtp.gmail.com",
     port: 465,
