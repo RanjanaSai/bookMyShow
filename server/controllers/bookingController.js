@@ -75,6 +75,13 @@ const bookNewShow = async (req, res) => {
         },
       });
 
+
+    res.send({
+      success: true,
+      message: "Show Booked Successfully",
+      data: populatedBooking,
+    });
+
     await EmailHelper("ticketTemplate.html", populatedBooking.user.email, {
       name: populatedBooking.user.name,
       movie: populatedBooking.show.movie.movieName,
@@ -85,13 +92,6 @@ const bookNewShow = async (req, res) => {
       amount: populatedBooking.seats.length * populatedBooking.show.ticketPrice,
       transactionId: populatedBooking.transactionId,
     }, "Booking Confirmation");
-
-    res.send({
-      success: true,
-      message: "Show Booked Successfully",
-      data: populatedBooking,
-    });
-
 
   } catch (err) {
     res.send({
