@@ -45,7 +45,7 @@ app.use(
 );
 
 
-const clientBuildPath = path.join(__dirname, "./client/build");
+const clientBuildPath = path.join(__dirname, "../client/build");
 console.log(clientBuildPath);
 app.use(express.static(clientBuildPath));
 
