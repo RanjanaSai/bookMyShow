@@ -3,7 +3,7 @@ const nodemailer = require("nodemailer");
 const fs = require('fs');
 const path = require('path');
 const dotenv = require('dotenv');
-
+const sgMail = require('@sendgrid/mail');
 dotenv.config();
 
 const { SENDGRID_APIKEY } = process.env;
