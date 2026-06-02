@@ -6,23 +6,15 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
-// const transporter = nodemailer.createTransport({
-//     host: "smtp.gmail.com",
-//     port: 465,
-//     secure: true, // true for port 465, false for other ports
-//     auth: {
-//         user: process.env.GMAIL_USER,
-//         pass: process.env.GMAIL_PASS,
-//     },
-// });
-const transportDetails = {
-    host: 'smtp.ethereal.email',
-    port: 587,
+const transporter = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 465,
+    secure: true, // true for port 465, false for other ports
     auth: {
-        user: process.env.Ethereal_user,
-        pass: process.env.Ethereal_pass,
+        user: process.env.GMAIL_USER,
+        pass: process.env.GMAIL_PASS,
     },
-};
+});
 
 const replaceContent = (content, creds) => {
     let allKeysAttr = Object.keys(creds);
@@ -44,8 +36,7 @@ async function EmailHelper(templateName, recieverEmail, creds, emailSubject) {
             text: `Hi ${creds.name} this is your OTP for BookMyShowClone ${creds.otp}`,
             html: replaceContent(content, creds)
         }
-        const info = await transporter.sendMail(emailDetails);
-        console.log("MAIL SENT:", info);
+        await transporter.sendMail(emailDetails);
     } catch (err) {
         console.log(err);
     }
