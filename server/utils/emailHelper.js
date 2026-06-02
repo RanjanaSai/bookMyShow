@@ -31,7 +31,8 @@ async function EmailHelper(templateName, recieverEmail, creds, emailSubject) {
         const content = await fs.promises.readFile(templatePath, "utf-8");
         const emailDetails = {
             to: recieverEmail,
-            from: "bookmyshow-clone@gmail.com",
+           // from: "bookmyshow-clone@gmail.com",
+            from: process.env.GMAIL_USER,
             subject: emailSubject,
             text: `Hi ${creds.name} this is your OTP for BookMyShowClone ${creds.otp}`,
             html: replaceContent(content, creds)
