@@ -3,10 +3,9 @@ const nodemailer = require("nodemailer");
 const fs = require('fs');
 const path = require('path');
 const dotenv = require('dotenv');
-const sgMail = require('@sendgrid/mail');
+
 dotenv.config();
 
-const { SENDGRID_APIKEY } = process.env;
 // const transporter = nodemailer.createTransport({
 //     host: "smtp.gmail.com",
 //     port: 465,
@@ -17,11 +16,11 @@ const { SENDGRID_APIKEY } = process.env;
 //     },
 // });
 const transportDetails = {
-    host: "smtp.sendgrid.net",
+    host: 'smtp.ethereal.email',
     port: 587,
     auth: {
-        user: "apikey",
-        pass: SENDGRID_APIKEY,
+        user: process.env.Ethereal_user,
+        pass: process.env.Ethereal_pass,
     },
 };
 
