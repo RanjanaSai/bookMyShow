@@ -5,6 +5,7 @@ const movieModel = require("../models/movieModel");
 const Stripe = require("stripe");
 require('dotenv').config();// load the environment variables
 const stripe = Stripe(process.env.STRIPE_KEY);
+const nodemailer = require("nodemailer");
 
 
 const EmailHelper = require("../utils/emailHelper");
