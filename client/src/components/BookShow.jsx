@@ -30,9 +30,9 @@ const BookShow = () => {
     };
 
     const getSeats = () => {
-        let columns = 12;
-        let totalSeats = 120;
-        let rows = totalSeats / columns; // 10
+        let columns = 10;
+        let totalSeats = show.totalSeats;
+        let rows = Math.ceil(totalSeats / columns);
         return (
             <div
                 className="d-flex flex-column align-items-center"
